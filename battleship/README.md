@@ -1,11 +1,13 @@
 # Project Details
+
 ### Stages: 5
 Each stage is based upon the previous step. 
-1. set up battlefield
-2. take one shot based on your battlefield and output result (miss/hit)
-3. before taking a shot, make your field foggy (=your ships become invisible)
-4. add condition when the game will stop (i.e. all ships sunk). Play the game until all ships on your field are gone
-5. add another player
+1. Set up battlefield
+2. Take one shot based on your battlefield and output result (miss/hit)
+3. Before taking a shot, make your field foggy (=your ships become invisible)
+4. Add condition when the game will stop (i.e. all ships sunk). Play the game until all ships on your field are gone
+5. Add another player
+
 ## Task description
 
 Here is a good way to show off your new skills: offer a friend to play a computer game that you wrote yourself! Of course, it is much more fun to play Battleship with someone else: the possibility of winning or losing adds a thrill to the game!
@@ -335,9 +337,9 @@ Input is a String in format `letter_number` of the cell you want to process. In 
 Output will be printed out on the screen as per example above.
 
 ## Topics used for this task:
-- **inheritance** - I have used this OOP concept to extend classes and create hierarchy. (`class Player extends BattleField`
-- **enums** - I have used different classes before, but it is the time when I have used Enums with fields
-- **static and instance methods**
-- **Scanner class*
-- **if- and switch statements**
-- **encapsulation** - creating objects with fields and methods
+- **Inheritance** - I have used this OOP concept to extend classes and create hierarchy. (`class Player extends BattleField`
+- **Enums** - I have used different classes before, but it is the time when I have used Enums with fields
+- **Static and instance methods**
+- **Scanner class**
+- **If- and switch statements**
+- **Encapsulation** - creating objects with fields and methods
