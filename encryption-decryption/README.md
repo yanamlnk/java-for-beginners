@@ -1,5 +1,6 @@
 # Project Details
-### How many stages overall: 6
+
+### Stages: 6
 1) Print out encrypted message where you replace each letter with the letter that is in the corresponding position from the end of the English alphabet (a→z, b→y, c→x, ... x→c, y →b, z→a). Do not replace spaces or exclamation marks.
 2) A program that reads an English message and an integer number (key) from the standard input and shifts each letter by the specified number according to its order in the alphabet. If you reach the end of the alphabet, start back at the beginning (a follows z).
 3) Write a program that reads three lines from the standard input: a target operation (enc for encryption, dec for decryption), a message or a cyphertext, and a key to encrypt/decrypt messages. All non-letter characters should be encrypted as well as regular letters.
@@ -25,7 +26,7 @@ If there is something strange (an input file does not exist, or an argument does
 
 **Example 1**: -mode enc -in road_to_treasure.txt -out protected.txt -key 5 -alg unicode
 
-_This command must get data from `road_to_treasure.txt`, `encrypt` the data with the key of `5`, create `protected.txt`, and write ciphertext into it.
+_This command must get data from `road_to_treasure.txt`, `encrypt` the data with the key of `5`, create `protected.txt`, and write ciphertext into it._
 
 **Example 2**: -mode enc -key 5 -data "Welcome to hyperskill!" -alg unicode
 
@@ -48,7 +49,7 @@ _This command must get data from `road_to_treasure.txt`, `encrypt` the data with
 ## Input
 `main(String[] args)`
 
-Programme takes input as command-line arguments. Example of input:
+Program takes input as command-line arguments. Example of input:
 ```
 -key 5 -alg shift -data "Welcome to hyperskill!" -mode enc
 ```
@@ -60,6 +61,6 @@ Depending on the initial arguments, output can be either in a form of a file (us
 ## Topics used for this task
 
 - **Design Patterns** - simple factory (`Factory` class that depending on the `-alg` creates instance of either `Shift` class or `Unicode`)  and template method(`Shift` and `Unicode` classes extend abstract class `Cypher`)
-- **abstract class**
-- working with **command-line arguments**
+- **Abstract class**
+- Working with **command-line arguments**
 - **Files** - reading, writing and creating files
